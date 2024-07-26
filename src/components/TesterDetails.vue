@@ -249,4 +249,32 @@ export default defineComponent({
 .glossy {
   margin-top: 10px;
 }
+@media (max-width: 768px) {
+  .outer-class {
+    padding: 20px;
+  }
+
+  .label, .value {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .outer-class {
+    padding: 15px;
+  }
+
+  .label, .value {
+    width: 100%;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .row {
+    margin-bottom: 10px;
+  }
+}
 </style>

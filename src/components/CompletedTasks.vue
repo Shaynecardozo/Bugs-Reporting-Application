@@ -102,6 +102,7 @@ export default defineComponent({
           <p>No completed tasks available</p>
         </q-card-section>
       </q-card>
+      <q-btn label="Go back" color="negative" class="q-mt-md" @click="logout" />
     </div>
   </q-page>
 </template>
@@ -109,6 +110,7 @@ export default defineComponent({
 <script>
 import { defineComponent, computed } from 'vue';
 import { dataStore } from 'src/stores/DataStore';
+import { useRouter } from 'vue-router';
 
 export default defineComponent({
   setup() {
@@ -117,9 +119,14 @@ export default defineComponent({
     const doneTasks = computed(() =>
       store.information.filter((task) => task.completed === 'Yes')
     );
+    const router=useRouter();
+    function logout() {
+      router.push({ name: 'adminboard' }); // Adjust this based on your route configuration
+    }
 
     return {
       doneTasks,
+      logout
     };
   },
 });
@@ -168,5 +175,22 @@ export default defineComponent({
 .bug-developer
 {
   color:black
+}
+@media (max-width: 480px) {
+  .container {
+    font-size: 0.9em;
+  }
+
+  .bug-item {
+    padding: 8px;
+  }
+
+  .bugs-title {
+    font-size: 1em;
+  }
+
+  .bug-title {
+    font-size: 0.9em;
+  }
 }
 </style>

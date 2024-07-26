@@ -253,6 +253,41 @@ export default defineComponent({
   .q-mt-md {
     margin-top: 16px;
   }
+  @media (max-width: 768px) {
+  .main {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .title-container h3 {
+    font-size: 1.5em;
+  }
+
+  .input-field {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 5px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .title-container h3 {
+    font-size: 1.2em;
+  }
+
+  .input-field {
+    margin-bottom: 8px;
+  }
+}
   </style>
   
   

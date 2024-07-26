@@ -200,6 +200,23 @@
   .q-mt-md {
     margin-top: 16px;
   }
+  @media (max-width: 480px) {
+  .main {
+    padding: 5px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .title-container h3 {
+    font-size: 1.2em;
+  }
+
+  .input-field {
+    margin-bottom: 8px;
+  }
+}
   </style>
   
   

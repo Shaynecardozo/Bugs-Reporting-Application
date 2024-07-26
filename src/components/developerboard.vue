@@ -174,5 +174,13 @@ export default defineComponent({
   .submit-btn {
     margin-top: 16px;
   }
+  @media only screen and (max-width: 768px) {
+  .card {
+    width: 95%;
+  }
+  .submit-btn {
+    width: 100%;
+  }
+}
   </style>
   

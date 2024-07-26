@@ -274,5 +274,16 @@ export default defineComponent({
     margin-top: 10px;
     width: 100%;
   }
+  @media only screen and (max-width: 768px) {
+  .card {
+    padding: 15px;
+  }
+  .input-field {
+    margin-bottom: 10px;
+  }
+  .submit-btn {
+    margin-top: 8px;
+  }
+}
   </style>
   

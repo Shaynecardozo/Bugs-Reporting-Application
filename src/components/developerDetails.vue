@@ -248,5 +248,17 @@
 {
   color:black
 }
+@media only screen and (max-width: 768px) {
+  .developer-card {
+    padding: 10px;
+  }
+  .container {
+    font-size: 1.4em;
+  }
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
   </style>
   
